@@ -76,8 +76,6 @@ Additionally, it offers optional hotkey automation by sending the F13 key at ran
 
 # Shutdown Timer mit Hotkey-Automatisierung
 
-![Shutdown Timer Screenshot]([images/screenshot.png](https://github.com/blabond/ShutdownTimer/blob/main/img/pctool.png))
-
 ## Übersicht
 
 Eine auf PowerShell basierende Anwendung mit einer benutzerfreundlichen GUI zum Planen von Systemabschaltungen basierend auf:
