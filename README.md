@@ -24,8 +24,6 @@ Additionally, it offers optional hotkey automation by sending the F13 key at ran
 - **Hotkey Automation**:
   - Sends the F13 key at random intervals between 182 and 280 seconds.
   - Can be enabled or disabled as needed.
-- **Demo Mode**:
-  - Test the application without actually shutting down the system.
 
 ## Download
 
@@ -98,8 +96,6 @@ Zusätzlich bietet sie eine optionale Hotkey-Automatisierung durch Senden der F1
 - **Hotkey-Automatisierung**:
   - Sendet die F13-Taste in zufälligen Intervallen zwischen 182 und 280 Sekunden.
   - Kann nach Bedarf aktiviert oder deaktiviert werden.
-- **Demo-Modus**:
-  - Testen Sie die Anwendung, ohne das System tatsächlich herunterzufahren.
 
 ## Download
 
