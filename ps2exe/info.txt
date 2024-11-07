@@ -1,0 +1,40 @@
+Anleitung zur Erstellung der ausführbaren Datei (EXE) aus dem PowerShell-Skript (PS1)
+
+
+Um das PowerShell-Skript shutdown.ps1 in eine ausführbare Datei (ShutdownTimer.exe) umzuwandeln, wurde das Tool ps2exe verwendet. Diese Anleitung beschreibt, wie Sie diesen Prozess durchführen können.
+
+
+Voraussetzungen
+Aktivieren der Skriptausführung
+
+Damit Sie PowerShell-Skripte auf Ihrem System ausführen und konvertieren können, müssen Sie die Ausführungsrichtlinie anpassen.
+
+PowerShell als Administrator öffnen:
+
+Suchen Sie nach PowerShell, rechtsklicken Sie darauf und wählen Sie "Als Administrator ausführen".
+Ausführungsrichtlinie ändern:
+
+>> Set-ExecutionPolicy RemoteSigned
+
+Geben Sie Y ein und drücken Sie Enter, um die Änderung zu bestätigen.
+Diese Einstellung erlaubt das Ausführen lokal erstellter Skripte und blockiert weiterhin unsignierte Skripte aus dem Internet.
+Installation des ps2exe-Moduls
+
+Modul installieren:
+
+>> Install-Module -Name ps2exe -Scope CurrentUser
+
+Wenn Sie aufgefordert werden, die Installation aus einem nicht vertrauenswürdigen Repository zu bestätigen, geben Sie Y ein und drücken Sie Enter.
+
+
+
+Konvertierung des Skripts in eine EXE-Datei
+Vorbereitung
+
+Skript und Icon bereitstellen:
+Stellen Sie sicher, dass Ihr PowerShell-Skript (shutdown.ps1) und die gewünschte Icon-Datei (pctool.ico) an einem bekannten Ort gespeichert sind, z. B. auf Ihrem Desktop.
+Konvertierung ausführen
+
+Befehl ausführen:
+
+>> Invoke-ps2exe "C:\Users\Administrator\Desktop\shutdown.ps1" "C:\Users\Administrator\Desktop\ShutdownTimer.exe" -noConsole -noOutput -iconFile "C:\Users\Administrator\Desktop\pctool.ico"
